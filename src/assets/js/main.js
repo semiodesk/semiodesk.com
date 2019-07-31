@@ -1,46 +1,13 @@
 $(document).ready(function() {
-  // Enable the hamburger menu.
-  $(".hamburger").click(function(e) {
-    $(e.currentTarget).toggleClass("is-active");
+  // Enable smooth scrolling.
+  new SmoothScroll('a[href*="#"]', { speed: 150 });
+
+  $('.sidenav').focusin(function() {
+    $('body').addClass('sidenav-toggled');
   });
 
-  // Set the trinity version in the header.
-  $(".trinity-version").text(version);
-
-  // Enable smooth scrolling.
-  new SmoothScroll('a[href*="#"]');
-
-  // Clear the contents of the code block so typed.js does not go crazy.
-  $("#nuget").text("");
-
-  var typed = undefined;
-
-  var observeVisibility = function(element, callback) {
-    var options = {
-      root: document.root,
-      rootMargin: "0px",
-      threshold: 1.0
-    };
-
-    var observer = new IntersectionObserver((entries, observer) => {
-      entries.forEach(entry => {
-        callback(entry.intersectionRatio > 0);
-      });
-    }, options);
-
-    observer.observe(element);
-  };
-
-  observeVisibility(document.getElementById("nuget"), function(visible) {
-    if (visible && !typed) {
-      // Enable typing animation on Nuget code.
-      typed = new Typed("#nuget", {
-        strings: ["PM> Install-Package Trinity.RDF"],
-        startDelay: 500,
-        typeSpeed: 40,
-        loopCount: 1
-      });
-    }
+  $('.sidenav').focusout(function() {
+    $('body').removeClass('sidenav-toggled');
   });
 
   // Initialize the contact form.
@@ -51,10 +18,10 @@ $(document).ready(function() {
     $(".form-status-ok").css("display", "none");
     $(".form-status-error").css("display", "none");
 
-    $('.btn-submit').click(function(e) {
+    $(".btn-submit").click(function(e) {
       form.submit();
     });
-    
+
     form.submit(function(e) {
       e.preventDefault();
 

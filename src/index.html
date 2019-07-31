@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Trinity RDF | Object mapper for building knowledge graphs with .NET</title>
+    <title>semiodesk | Everything connects.</title>
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta
-      name="description"
-      content="Enterprise ready object mapper for developing RDF knowledge graph applications with .NET"
-    />
+    <meta name="description" content="" />
     <meta name="author" content="Semiodesk GmbH" />
 
     <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
@@ -17,597 +14,329 @@
     <link href="node_modules/@fortawesome/fontawesome-free/css/all.css" rel="stylesheet" />
     <link href="node_modules/roboto-fontface/css/roboto/roboto-fontface.css" rel="stylesheet" />
     <link href="node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
-    <link href="node_modules/hamburgers/dist/hamburgers.css" rel="stylesheet" />
     <link href="node_modules/aos/dist/aos.css" rel="stylesheet" />
-    <link href="node_modules/highlight.js/styles/tomorrow.css" rel="stylesheet" />
     <link href="assets/css/main.css" rel="stylesheet" />
     <!--endbuild -->
   </head>
 
-  <body id="page-top">
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-      <div class="container-fluid">
-        <a class="navbar-brand" data-scroll href="#page-top">
-          <img src="assets/img/trinity-logo.svg" width="48" height="48" /> Trinity RDF
-        </a>
-        <button
-          class="hamburger hamburger--collapse navbar-toggler navbar-toggler-right"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarResponsive"
-          aria-controls="navbarResponsive"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-          </span>
-        </button>
+  <body id="page-top" class="sidenav-open">
+    <nav class="navbar navbar-primary">
+      <div class="container">
+        <div class="w-100 d-flex flex-row justify-content-center justify-content-md-start p-3">
+          <img src="assets/img/semiodesk.svg" height="45" alt="Semiodesk" />
 
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto my-2 my-lg-0">
-            <li class="nav-item"><a class="nav-link" data-scroll href="#features">Features</a></li>
-            <li class="nav-item"><a class="nav-link" data-scroll href="#documentation">Documentation</a></li>
-            <li class="nav-item"><a class="nav-link" data-scroll href="#references">References</a></li>
-            <li class="nav-item"><a class="nav-link" data-scroll href="#contributing">Contributing</a></li>
-          </ul>
-          <a href="https://github.com/semiodesk/trinity-rdf/" target="_blank"
-            ><i class="fab fa-2x fa-github text-white ml-4"></i
-          ></a>
-          <a href="https://stackoverflow.com/questions/tagged/trinity-rdf" target="_blank"
-            ><i class="fab fa-2x fa-stack-overflow text-white ml-3"></i
-          ></a>
+          <a id="btn-contact" class="btn btn-xl btn-primary d-xl-none" href="#contact" data-scroll>
+            Contact Us
+          </a>
         </div>
       </div>
     </nav>
 
-    <header class="masthead p-relative content-top">
-      <div class="container h-100">
-        <div id="masthead-content" class="h-100 p-relative">
-          <div class="row text-center text-lg-left">
-            <div class="col-12 col-lg-7 pt-lg-5">
-              <h1 class="mt-lg-5">Entity Framework for Graph Databases.</h1>
-
-              <p class="font-weight-light my-4 pr-sm-5">
-                Enterprise ready object mapper for developing RDF knowledge graph applications with .NET
-              </p>
-
-              <button id="btn-download" class="btn btn-accent btn-xl mt-3">
-                <i class="fas fa-download fa-2x"></i><span class="fa-2x-label">Download</span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+    <header class="content-top masthead">
+      <div class="container"></div>
     </header>
 
-    <section class="page-section bg-gray pt-4" id="about">
+    <section class="bg-white text-black">
       <div class="container">
-        <div class="row">
-          <div class="col-md-4" data-aos="fade-right">
-            <div class="mt-5">
-              <div class="text-center">
-                <i class="fas fa-4x fa-smile-beam mb-4 text-primary"></i>
-                <h3 class="h4 mb-2">Free & Easy</h3>
-              </div>
-              <p class="text-muted mb-0">
-                With Trinity data model packages, developers can handle large-scale RDF knowledge graphs without even
-                knowing!
-              </p>
-              <ul class="fa-ul mt-3">
-                <li>
-                  <i class="fa-li fa fa-check text-green"></i> <span class="fw-500">Open Source, MIT License</span>
-                </li>
-                <li><i class="fa-li fa fa-check text-green"></i> <span class="fw-500">Shallow Learning Curve</span></li>
-                <li><i class="fa-li fa fa-check text-green"></i> <span class="fw-500">LINQ</span></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-4" data-aos="fade-right" data-aos-delay="400">
-            <div class="mt-5">
-              <div class="text-center">
-                <i class="fas fa-4x fa-lightbulb mb-4 text-primary"></i>
-                <h3 class="h4 mb-2">Smart</h3>
-              </div>
-              <p class="text-muted mb-0">
-                Many RDF databases supoprt logical reasoning during application runtime to answer queries about facts
-                which have not been explicitly saved.
-              </p>
-              <ul class="fa-ul mt-3">
-                <li><i class="fa-li fa fa-check text-green"></i> <span class="fw-500">Logical Reasoning</span></li>
-                <li><i class="fa-li fa fa-check text-green"></i> <span class="fw-500">Write Simpler Queries</span></li>
-                <li><i class="fa-li fa fa-check text-green"></i> <span class="fw-500">Discover Hidden Facts</span></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-4" data-aos="fade-right" data-aos-delay="800">
-            <div class="mt-5">
-              <div class="text-center">
-                <i class="fas fa-4x fa-clock mb-4 text-primary"></i>
-                <h3 class="h4 mb-2">Sustainable</h3>
-              </div>
-              <p class="text-muted mb-0">
-                The Resource Description Framework linked data platform is an open standard maintained by the World Wide
-                Web Consortium (W3C).
-              </p>
-              <ul class="fa-ul mt-3">
-                <li>
-                  <i class="fa-li fa fa-check text-green"></i> <span class="fw-500">.NET Standard, Core, Mono</span>
-                </li>
-                <li>
-                  <i class="fa-li fa fa-check text-green"></i>
-                  <span class="fw-500">Standardized RDF Graph Technology</span>
-                </li>
-                <li><i class="fa-li fa fa-check text-green"></i> <span class="fw-500">Vendor Independent</span></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="page-section" id="features">
-      <h4 class="text-center text-muted mb-4">Features</h4>
-      <div id="features-slider" class="carousel slide" data-interval="false">
-        <div class="carousel-controls d-flex flex-row justify-content-center">
-          <a class="carousel-control carousel-control-prev" href="#features-slider" role="button" data-slide="prev">
-            <i class="fas fa-3x fa-arrow-circle-left" aria-hidden="true"></i>
-            <span class="sr-only">Previous</span>
-          </a>
-
-          <ol class="carousel-indicators">
-            <li data-target="#features-slider" data-slide-to="0" class="active"></li>
-            <li data-target="#features-slider" data-slide-to="1"></li>
-            <li data-target="#features-slider" data-slide-to="2"></li>
-            <li data-target="#features-slider" data-slide-to="3"></li>
-          </ol>
-
-          <a class="carousel-control carousel-control-next" href="#features-slider" role="button" data-slide="next">
-            <i class="fas fa-3x fa-arrow-circle-right" aria-hidden="true"></i>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-
-        <div class="carousel-inner" role="listbox" style="min-height: 350px">
-          <div class="carousel-item active">
-            <div class="container p-relative p-0">
-              <h2>Object Mapping</h2>
-              <div class="row">
-                <div class="col-lg-6 p-lg-3">
-                  <p class="mb-0 text-muted">
-                    Similar to OR-mapping techniques for relational databases, we provide a way to map RDFS / OWL terms
-                    to .NET objects. Using byte-code manipulation, we implement the code required for the mapping during
-                    program compilation. This results in higher performance and less runtime errors than solutions based
-                    on introspection.
-                  </p>
-                  <a class="btn btn-accent btn-xl my-4" href="#about"
-                    ><i class="fas fa-download mr-3"></i> Download Example</a
-                  >
-                </div>
-                <div class="col-lg-6">
-                  <pre><code class="cs">// A class mapping to http://schema.org/Person
-[RdfClass(<a href="https://schema.org/Person"  target="_blank"><abbr title="A person (alive, dead, undead, or fictional).">SCHEMA.Person</abbr></a>)]
-public class Person : Resource
-{
-    [RdfProperty(<a href="https://schema.org/givenName" target="_blank"><abbr title="Given name. In the U.S., the first name of a Person. This can be used along with familyName instead of the name property.">SCHEMA.givenName</abbr></a>)]
-    public string FirstName { get; set; }
-
-    [RdfProperty(<a href="https://schema.org/familyName" target="_blank"><abbr title="Family name. In the U.S., the last name of an Person. This can be used along with givenName instead of the name property.">SCHEMA.familyName</abbr></a>)]
-    public string LastName { get; set; }
-
-    [RdfProperty(<a href="https://schema.org/birthDate" target="_blank"><abbr title="Date of birth.">SCHEMA.birthDate</abbr></a>)]
-    public DateTime BirthDate { get; set; }
-}
-                  </code></pre>
-                  <pre><code class="cs">// Create a new instance of person with a GUID
-var p = model.CreateResource&lt;<span class="type">Person</span>&gt;();
-p.Name = "John Doe";
-p.Birthday = new <span class="type">DateTime</span>(1985, 6, 17);
-p.Commit();
-                  </code></pre>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="container p-0">
-              <h2>LINQ</h2>
-              <div class="row">
-                <div class="col-lg-6 p-lg-3">
-                  <p class="mb-0 text-muted">
-                    Not familiar with <a href="https://wikipedia.org/wiki/SPARQL">SPARQL</a>? No problem. The powerful
-                    LINQ to SPARQL translator in Trinity RDF lets you query your RDF knowledge graph using LINQ. No
-                    joins attached!
-                  </p>
-                  <a class="btn btn-accent btn-xl my-4" href="#about"
-                    ><i class="fas fa-download mr-3"></i> Download Example</a
-                  >
-                </div>
-                <div class="col-lg-6">
-                  <pre><code class="cs">// Create a queryable context with inferencing enabled so that the
-// query also returns instances of sub-types of person.
-var persons = model.AsQueryable&lt;<span class="type">Person</span>&gt;(true);
-
-// Select all persons born after 1st January 2000 and
-// who have a name starting with "A" or "a".
-foreach (<span class="type">Person</span> p in persons.Where(
-  p => p.BirthDate > new <span class="type">DateTime</span>(2000) &&
-  p.Name.StartsWith("A", <span class="type">StringComparison</span>.InvariantCultureIgnoreCase)
-)
-{
-  <span class="type">Console</span>.WriteLine(p.Name);
-}
-                    </code></pre>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="container p-0">
-              <h2>Data Binding</h2>
-              <div class="row">
-                <div class="col-lg-6 p-lg-3">
-                  <p class="mb-0 text-muted">
-                    Many modern desktop and web application development frameworks support binding the value of .NET
-                    object properties directly to user interface controls. This allows for rapid application development
-                    and prototyping. Trinity RDF offers some time-saving attributes that let our byte-code manipulator
-                    do the heavy lifting for you.
-                  </p>
-                  <a class="btn btn-accent btn-xl my-4" href="#about"
-                    ><i class="fas fa-download mr-3"></i> Download Example</a
-                  >
-                </div>
-                <div class="col-lg-6">
-                  <pre><code class="cs">// A class mapping to http://schema.org/Person
-[RdfClass(SCHEMA.Person)]
-public class Person : Resource
-{
-  // Raises the NotifyPropertyChanged-event when 
-  // the property value changes.
-  [RdfProperty(SCHEMA.name), <b class="highlight">NotifyPropertyChanged</b>]
-  public string Name { get; set; }
-  
-  // Raises the CollectionChanged-event when
-  // the collection is modified.
-  [RdfProperty(SCHEMA.knows)]
-  public <b class="highlight">ObservableCollection&lt;Person&gt;</b> KnownPersons { get; set; }
-}
-                  </code></pre>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="container p-0">
-              <h2>Data Virtualization</h2>
-              <div class="row">
-                <div class="col-lg-6 p-lg-3">
-                  <p class="mb-0 text-muted">
-                    RDF knowledge graphs can become large datasets quite easily. In order to maintain application
-                    performance and user interface responsiveness, Trinity RDF makes paged queries to your datasets
-                    easy. Simply use the Take and Skip operators in your LINQ queries and you're done. Of course,
-                    <a href="https://www.w3.org/TR/rdf-sparql-query/#modOffset" target="_blank">SPARQL</a>
-                    has built-in support for paging if you are creating more advanced queries.
-                  </p>
-                  <a class="btn btn-accent btn-xl my-4" href="#about"
-                    ><i class="fas fa-download mr-3"></i> Download Example</a
-                  >
-                </div>
-                <div class="col-lg-6">
-                  <pre><code class="cs">// Load 100 items per page
-var persons = model.AsQueryable&lt;<b class="type">Person</b>&gt;();
-
-// Load 10 persons per page.
-var pageSize = 10;
-
-// Skip one page and load the next 10 persons.
-foreach (<b class="type">Person</b> p in persons.Skip(1 * pageSize).Take(pageSize))
-{
-  <b class="type">Console</b>.WriteLine(p.Name);
-}
-                  </code></pre>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="page-section pt-1">
-      <div class="container">
-        <hr />
-        <h6 class="text-center text-muted mb-4">Supported Databases</h6>
-        <table class="bg-gray mt-4" data-aos="flip-left">
-          <thead>
-            <th>Name</th>
-            <th>Inferencing</th>
-            <th>Clusterable</th>
-            <th>Transactions</th>
-            <th>License</th>
-          </thead>
-          <tr>
-            <td>
-              <a
-                href="https://github.com/dotnetrdf/dotnetrdf/wiki/UserGuide-Working-With-Triple-Stores#in-memory-triple-stores"
-                target="_blank"
-                >In-Memory</a
-              >
-            </td>
-            <td><i class="fas fa-times"></i></td>
-            <td><i class="fas fa-times"></i></td>
-            <td><i class="fas fa-times"></i></td>
-            <td><a href="https://opensource.org/licenses/MIT" target="_blank">MIT</a></td>
-          </tr>
-          <tr>
-            <td><a href="https://github.com/openlink/virtuoso-opensource" target="_blank">OpenLink Virtuoso</a></td>
-            <td><i class="fas fa-check"></i></td>
-            <td><i class="fas fa-check"></i></td>
-            <td><i class="fas fa-check"></i></td>
-            <td><a href="https://opensource.org/licenses/GPL-2.0" target="_blank">GPL 2.0</a>, Commercial</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td><a href="https://stardog.com/" target="_blank">Stardog</a></td>
-            <td><i class="fas fa-check"></i></td>
-            <td><i class="fas fa-check"></i></td>
-            <td><i class="fas fa-check"></i></td>
-            <td>Commercial</td>
-            <td></td>
-          </tr>
-
-          <tr>
-            <td><a href="https://www.w3.org/TR/sparql11-protocol/" target="_blank">SPARQL 1.1 Protocol</a></td>
-            <td colspan="5">Trinity RDF can connect to all databases supporting the SPARQL query language.</td>
-          </tr>
-        </table>
-      </div>
-    </section>
-
-    <section>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-6 bg-gray-light text-center" id="documentation">
-            <div class="p-5 m-md-5">
-              <i class="fas fa-4x fa-book-open mb-4 text-primary"></i>
-              <h2 class="mb-2">Documentation</h2>
-              <p>We advise starters to take a look at the following sections in our <a href="doc/">DocFX pages</a>:</p>
-
-              <ul class="my-4 text-left pull-center" style="width: 10em">
-                <li><a href="doc/tutorials/firstSteps.html" target="_blank">First Steps</a></li>
-                <li><a href="doc/tutorials/intro.html" target="_blank">Tutorials</a></li>
-                <li><a href="doc/api/">API Reference</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-6 bg-gray text-center" id="contributing">
-            <div class="p-5 m-md-5">
-              <i class="fas fa-4x fa-users mb-4 text-primary"></i>
-              <h2 class="text-center mb-2">Come in, we're open!</h2>
-              <p class="mb-4">Find answers to your questions in our community:</p>
-              <ul class="list-inline">
-                <li class="list-inline-item">
-                  <a
-                    class="btn btn-primary btn-xl mx-2 mb-4"
-                    href="https://github.com/semiodesk/trinity-rdf"
-                    target="_blank"
-                  >
-                    <i class="fab fa-github fa-2x"></i>
-                    <span class="fa-2x-label">GitHub</span></a
-                  >
-                </li>
-                <li class="list-inline-item">
-                  <a
-                    class="btn btn-primary btn-xl mx-2 mb-4"
-                    href="https://stackoverflow.com/questions/tagged/trinity-rdf"
-                    target="_blank"
-                  >
-                    <i class="fab fa-stack-overflow fa-2x"></i>
-                    <span class="fa-2x-label">Stackoverflow</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- <section class="page-section" id="references">
-      <div class="container text-center">
-        <h4 class="text-center text-muted mb-4">References</h4>
-        <p class="text-muted">
-          Trinity RDF is being used to manage knowledge graphs at the following organizations:
+        <p class="py-5">
+          Semiodesk provides know-how and efficient tools to speed up the development of corporate knowledge graph
+          applications in your .NET eco system.
         </p>
 
-        <div class="row" data-aos="zoom-in">
-          <div class="col-lg-3"></div>
-          <div class="col-lg-3">
-            <a href="https://www.se.com" class="d-block m-4" target="_blank">
-              <img src="assets/img/schneider-electric.svg" width="200" alt="Schneider Electric" />
-            </a>
+        <div class="d-flex flex-column justify-content-start align-items-center flex-md-row justify-content-md-center">
+          <div class="circle circle-blue m-4" data-aos="zoom-in" data-aos-delay="0">
+            <b>.NET Software Development</b>
           </div>
-          <div class="col-lg-3">
-            <a href="https://www.se.com" class="d-block m-4" target="_blank">
-              <img src="assets/img/ual_black.png" width="200" alt="University of the Arts, London" />
-            </a>
+          <div class="circle circle-blue m-4" data-aos="zoom-in" data-aos-delay="100">
+            <b>RDF Knowledge Graphs</b>
           </div>
-          <div class="col-lg-3"></div>
+          <div class="circle circle-blue m-4" data-aos="zoom-in" data-aos-delay="200">
+            <b>RDF Ontology Engineering</b>
+          </div>
         </div>
-      </div>
-    </section> -->
-
-    <section class="bg-dark text-center text-muted py-5">
-      <div class="container">
-        <a href="https://semiodesk.com" target="_blank"><img src="assets/img/semiodesk-white.svg" style="opacity: .5" width="150" alt="Semiodesk" /></a>
       </div>
     </section>
 
-    <div id="modal-download" class="modal fade" tabindex="-1">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <div>
-              <h4 class="modal-title text-nuget">Trinity.RDF</h4>
-              <small class="text-muted">Version: <span class="trinity-version"></span></small>
-            </div>
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-          </div>
-          <div class="modal-body">
-            <h5 class="mb-4">Install with NuGet (recommended)</h5>
-
-            <div class="d-flex flex-row justify-content-start align-items-start">
-              <a href="https://www.nuget.org/packages/Trinity.RDF/" target="_blank" class="mt-2 mr-2">
-                <img src="assets/img/nuget.svg" alt="NuGet" width="32" height="32" />
-              </a>
-              <div class="w-100">
-                <pre
-                  class="bg-nuget text-white p-3 w-100"
-                  style="border-radius: 5px;"
-                ><code id="nuget" class="nohighlight">PM> Install-Package Trinity.RDF</code></pre>
-                <p>
-                  or install via
-                  <a href="https://docs.nuget.org/consume/package-manager-dialog" target="_blank">Package Management</a>
-                  window.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="modal-footer d-flex flex-column justify-content-start align-items-start bg-gray">
-            <h5 class="mb-4">Direct Download</h5>
-            <p>
-              <a href="https://github.com/semiodesk/Trinity-RDF/releases">GitHub packages </a> containing assemblies and
-              source code.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="modal-contact" class="modal fade" tabindex="-1">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Contact</h5>
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-          </div>
-          <div class="modal-body">
-            <p>Thank you for getting in touch with us!</p>
-
-            <form id="contact-form" role="form" action="https://contact.modom.io/form/send" method="post">
-              <div class="form-group">
-                <label class="sr-only" for="name">Name</label>
-                <input type="name" class="form-control" id="name" placeholder="Name" required />
-              </div>
-              <div class="form-group">
-                <label class="sr-only" for="organization">Organization</label>
-                <input type="name" class="form-control" id="organization" placeholder="Organization" required />
-              </div>
-              <div class="form-group">
-                <label class="sr-only" for="role">Role</label>
-                <input type="name" class="form-control" id="role" placeholder="Role" />
-              </div>
-              <div class="form-group">
-                <label class="sr-only" for="e-mail">Email address</label>
-                <div class="input-group">
-                  <div class="input-group-prepend">
-                    <div class="input-group-text">@</div>
-                  </div>
-
-                  <input type="email" class="form-control" id="email" placeholder="E-Mail" required />
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="sr-only" for="subject">Subject</label>
-                <select class="form-control" id="subject">
-                  <option>Please choose a subject..</option>
-                  <option>Consulting</option>
-                  <option>Training</option>
-                  <option>Partnership</option>
-                  <option>Feature Request</option>
-                  <option>Schedule Call</option>
-                  <option>Schedule Demo</option>
-                  <option>Other</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label class="sr-only" for="message">Message</label>
-                <textarea class="form-control" id="message" rows="10">
-Hello,
-
-</textarea
-                >
-              </div>
-              <div class="text-center">
-                <div class="form-status">
-                  <div class="form-status-msg form-status-sending">
-                    <div class="d-flex flex-row align-items-center justify-content-center">
-                      <div class="lds-ellipsis">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                      </div>
-                      Sending message..
-                    </div>
-                  </div>
-
-                  <div class="form-status-msg form-status-ok">
-                    <i class="fas fa-check mr-2"></i> Message sent.
-                    <p><small>We will respond to your request within 1-2 business days.</small></p>
-                  </div>
-
-                  <div class="form-status-msg form-status-error">
-                    <i class="fas fa-times mr-2"></i> Sending message failed.
-                    <p>
-                      <small
-                        >We apologize. Please <a href="mailto:hello@semiodesk.com">contact us via e-mail</a>.</small
-                      >
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="submit" class="btn btn-primary btn-submit px-5 ml-auto mr-auto">Send</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <footer id="footer" class="footer bg-dark text-white p-5">
+    <section id="testimonials" class="page-section text-center">
       <div class="container">
+        <h6 class="text-uppercase">References</h6>
+        <div class="card-columns text-muted">
+          <div class="card testimonial" data-aos="flip-down" data-aos-easing="ease-in" data-aos-delay="0">
+            <div class="brand">
+              <img src="assets/img/schneider-electric.svg" />
+            </div>
+            <div class="card-body text-left">
+              <div class="author my-4">
+                <h5 class="name">Mark Stemmler</h5>
+                <small class="role">Software Manager, Buildings Graph Platform</small>
+              </div>
+              <blockquote>
+                The Trinity RDF library has been a real time saver for us on the
+                <a href="//www.ecostruxurebuildingadvisor.com/index-4.php" target="_blank"
+                  >EcoStruxure&trade; Building Advisor</a
+                >
+                project. Semiodesk’s responsiveness to our enhancement requests has been most appreciated. Thanks again
+                for all the support and I look forward to the released version!
+              </blockquote>
+            </div>
+          </div>
+          <div class="card testimonial" data-aos="flip-down" data-aos-easing="ease-in" data-aos-delay="50">
+            <div class="brand">
+              <img src="assets/img/wscad_elektrocad_logo_DE.png" />
+            </div>
+            <div class="card-body text-left">
+              <div class="author my-4">
+                <h5 class="name">Sebastian Tworek</h5>
+                <small class="role">Head of Software Engineering</small>
+              </div>
+              <blockquote>
+                Modom.io allows our developers and requirements engineers to collaborate on a controlled vocabulary. The
+                data model packages generated from this vocabulary significantly reduce the effort required for
+                integration in our products and services.
+              </blockquote>
+            </div>
+          </div>
+          <div class="card testimonial" data-aos="flip-down" data-aos-easing="ease-in" data-aos-delay="100">
+            <div class="brand">
+              <img src="assets/img/bvs_logo_w.png" />
+            </div>
+            <div class="card-body text-left">
+              <div class="author my-4">
+                <h5 class="name">Frauke von Klenze</h5>
+                <small class="role">CIO, Bayerische Verwaltungsschule (BVS)</small>
+              </div>
+              <blockquote>
+                Semiodesk consultants successfully created complex business intelligence views and datababase queries
+                for the users of our specialist applications. Our requirements were quickly captured and always
+                implemented to our full satisfaction.
+              </blockquote>
+            </div>
+          </div>
+          <div class="card testimonial" data-aos="flip-down" data-aos-easing="ease-in" data-aos-delay="150">
+            <div class="brand mr-4">
+              <img src="assets/img/ual_black.png" />
+            </div>
+            <div class="card-body text-left">
+              <div class="author my-4">
+                <h5 class="name">Dr. Athansios Velios</h5>
+                <small class="role">Reader in Documentation</small>
+              </div>
+              <blockquote>
+                I have worked with Semiodesk on <a href="//artivity.io" target="_blank">Artivity</a>. The tight project
+                deadlines required rapid development which Semiodesk delivered successfully on time. The quality of
+                their work is evident in both the efficiency of their tools and the communication of their technical
+                expertise.
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section text-center">
+      <div class="container">
+        <h6 class="text-uppercase">Consulting</h6>
+
+        <div class="path d-flex flex-column align-items-center flex-md-row justify-content-md-center">
+          <div class="circle circle-xl circle-blue z-1" data-aos="fade-left">
+            <img src="assets/img/icons/messaging-google-talk.svg" width="32" />
+            <h6>Tell us your problem.</h6>
+          </div>
+          <div class="z-0" data-aos="fade-right" data-aos-delay="200">
+            <span class="link">We listen.</span>
+          </div>
+          <div class="circle circle-xl circle-blue z-1" data-aos="fade-left">
+            <img src="assets/img/icons/presentation-statistics.svg" width="32" />
+            <h6>We discuss solutions.</h6>
+          </div>
+          <div class="z-0" data-aos="fade-right" data-aos-delay="200">
+            <span class="link">You're satisfied.</span>
+          </div>
+          <div class="circle circle-xl circle-blue z-1" data-aos="fade-left">
+            <img src="assets/img/icons/business-deal-handshake.svg" width="32" />
+            <h6>We engage.</h6>
+          </div>
+        </div>
+        
+        <p class="my-5">Our consultants deliver solutions with <u>flexible daily rates or project budgeting options</u>.</p>
+      </div>
+    </section>
+
+    <section class="page-section">
+      <div class="container">
+        <h6 class="text-uppercase text-center">Products</h6>
+        <div class="card-deck">
+          <div class="card product" data-aos="flip-left">
+            <img class="card-img" src="assets/img/modom-io-logo.svg" width="64" class="m-2" />
+            <div class="card-body text-center">
+              <h2>modom.io</h2>
+              <p>Easily create well-documented ontologies and turn them into ready-to-use software packages.</p>
+              <a class="btn btn-xl btn-primary" href="//modom.io" target="_blank">
+                Find out more
+              </a>
+            </div>
+          </div>
+          <div class="card product" data-aos="flip-right">
+            <img class="card-img" src="assets/img/trinity-logo.svg" width="64" class="m-2" />
+            <div class="card-body text-center">
+              <h2>Trinity RDF</h2>
+              <p>Enterprise ready object mapper for developing RDF knowledge graph applications with .NET</p>
+              <a class="btn btn-xl btn-trinity" href="//semiodesk.github.io/trinity-rdf.net" target="_blank">
+                Find out more
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section">
+      <div class="container">
+        <h6 class="text-uppercase text-center">Our Mission</h6>
+
+        <blockquote class="text-center">
+          We believe that in the next few years, information-driven companies will change the role of information as a
+          valuable resource in business. With over 10 years of knowledge graph experience, it is our goal to support our
+          partners with proven development methods and technologies, building on the
+          <a href="//www.w3.org/standards/semanticweb/" target="_blank">W3C´s Open Semantic Web Standards</a>
+          for the best possible sustainability.
+        </blockquote>
+
+        <div class="d-flex flex-column justify-content-center align-items-center flex-md-row text-center text-muted">
+          <div class="contact m-5" data-aos="fade-right">
+            <div class="circle overflow-hidden mb-2">
+              <img class="h-auto w-100" src="assets/img/people/moritz-eberl.jpg" alt="Moritz Eberl" />
+            </div>
+
+            <h5 class="name">Moritz Eberl</h5>
+            <small class="role">Co-Founder</small>
+          </div>
+          <div class="contact m-5" data-aos="fade-left">
+            <div class="circle overflow-hidden mb-2">
+              <img class="h-auto w-100" src="assets/img/people/sebastian-faubel.jpg" alt="Sebastian Faubel" />
+            </div>
+
+            <h5 class="name">Sebastian Faubel</h5>
+            <small class="role">Co-Founder</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="sidenav text-center text-xl-left text-muted" id="contact">
+      <h6 class="text-uppercase text-center d-xl-none">CONTACT US</h6>
+
+      <div class="d-flex flex-column align-items-center align-items-xl-start">
+        <div class="circle circle-xl overflow-hidden">
+          <img style="max-width: 300px;" src="assets/img/contact.jpg" />
+        </div>
+
+        <div>
+          <h4 class="mt-5 mb-3">How can we help you?</h4>
+          <p>
+            Use the contact form below to send us a message. Our usual response time for enquiries is 1-2 business days.
+          </p>
+        </div>
+      </div>
+
+      <form
+        class="overflow-y-scroll p-4 text-muted"
+        id="form-contact"
+        role="form"
+        action="https://contact.modom.io/form/send"
+        method="post"
+      >
+        <div class="form-group">
+          <label class="sr-only" for="name">Name</label>
+          <input type="name" class="form-control" id="name" placeholder="Name" required />
+        </div>
+        <div class="form-group">
+          <label class="sr-only" for="e-mail">Email address</label>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">@</div>
+            </div>
+
+            <input type="email" class="form-control" id="email" placeholder="E-Mail" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="sr-only" for="organization">Organization</label>
+          <input type="name" class="form-control" id="organization" placeholder="Organization" required />
+        </div>
+        <div class="form-group">
+          <label class="sr-only" for="role">Subject</label>
+          <input type="name" class="form-control" id="subject" placeholder="Subject" />
+        </div>
+        <div class="form-group">
+          <label class="sr-only" for="message">Message</label>
+          <textarea class="form-control" id="message" placeholder="Message" rows="10"></textarea>
+        </div>
+        <div class="text-center">
+          <div class="form-status">
+            <div class="form-status-msg form-status-sending">
+              <div class="d-flex flex-row align-items-center justify-content-center">
+                <div class="lds-ellipsis">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                Sending message..
+              </div>
+            </div>
+
+            <div class="form-status-msg form-status-ok">
+              <i class="fas fa-check mr-2"></i> Message sent.
+              <p><small>We will respond to your request within 1-2 business days.</small></p>
+            </div>
+
+            <div class="form-status-msg form-status-error">
+              <i class="fas fa-times mr-2"></i> Sending message failed.
+              <p>
+                <small>We apologize. Please <a href="mailto:hello@semiodesk.com">contact us via e-mail</a>.</small>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <button type="submit">Send</button>
+      </form>
+    </div>
+
+    <div class="overlay"></div>
+
+    <footer id="footer" class="text-muted">
+      <div class="container text-center text-md-left">
         <div class="row">
-          <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+          <div class="col-md-3 order-md-2">
+            Semiodesk GmbH<br />
+            Werner-von-Siemens Str. 6<br />
+            Building 15K<br />
+            D-86159 Augsburg<br />
+            GERMANY
+          </div>
+          <div class="col-md-3 order-md-1 d-none d-md-flex"></div>
+          <div class="col-md-6 order-md-0">
             <ul class="list-inline mb-2">
               <li class="list-inline-item">
                 <a href="notice.html">Site Notice</a>
               </li>
-              <li class="list-inline-item">&sdot;</li>
+              <li class="list-inline-item">⋅</li>
               <li class="list-inline-item">
                 <a href="privacy.html">Privacy Policy</a>
               </li>
-              <li class="list-inline-item">&sdot;</li>
+              <li class="list-inline-item">⋅</li>
               <li class="list-inline-item">
-                <a id="btn-contact" href="#footer">Contact Us</a>
+                <a href="#contact">Contact Us</a>
               </li>
             </ul>
-            <p class="text-muted small mb-4 mb-lg-0">&copy; Semiodesk GmbH 2019. All Rights Reserved.</p>
-          </div>
-          <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
-            <ul class="list-inline mb-0">
+            <p class="small mb-4">&copy; Semiodesk GmbH 2019. All Rights Reserved.</p>
+
+            <ul class="list-inline mt-5">
               <li class="list-inline-item mr-3">
-                <a href="#">
-                  <i class="fab fa-twitter fa-2x fa-fw ml-3"></i>
-                </a>
-                <a href="https://github.com/semiodesk/trinity-rdf/" target="_blank"
-                  ><i class="fab fa-2x fa-github text-white ml-3"></i
-                ></a>
-                <a href="https://stackoverflow.com/questions/tagged/trinity-rdf" target="_blank"
-                  ><i class="fab fa-2x fa-stack-overflow text-white ml-3"></i
-                ></a>
+                <a href="#"><i class="fab fa-2x  fa-twitter ml-3"></i></a>
+                <a href="#"><i class="fab fa-2x fa-linkedin ml-3"></i></a>
               </li>
             </ul>
           </div>
@@ -619,31 +348,14 @@ Hello,
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <script src="node_modules/smooth-scroll/dist/smooth-scroll.js"></script>
-    <script src="node_modules/typed.js/lib/typed.js"></script>
     <script src="node_modules/aos/dist/aos.js"></script>
-    <script src="assets/js/highlight.site.pack.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/sidenav.js"></script>
     <!--endbuild -->
 
-    <script src="https://static.semiodesk.com/semiodesk.trinity/release/stable/currentVersion.php"></script>
-
     <script>
-      AOS.init();
-
-      $("#features-slider").ready(function() {
-        hljs.initHighlighting();
-      });
-
-      $("#btn-contact").click(function(e) {
-        $("#modal-contact").modal("show");
-
-        e.preventDefault();
-      });
-
-      $("#btn-download").click(function(e) {
-        $("#modal-download").modal("show");
-
-        e.preventDefault();
+      AOS.init({
+        easing: "ease-out-back"
       });
     </script>
   </body>
