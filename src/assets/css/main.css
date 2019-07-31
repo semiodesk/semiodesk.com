@@ -480,6 +480,10 @@ blockquote.brand-wscad:before {
   color: #FFC905;
 }
 
+blockquote.brand-semiodesk:before {
+  color: #119eda;
+}
+
 /* Testimonials */
 .testimonial {
   text-align: center;
@@ -713,7 +717,7 @@ blockquote.brand-wscad:before {
 blockquote {
   position: relative;
   text-align: left;
-  font-size: 1.2em;
+  font-size: 1em;
   padding: 1rem 1.2rem;
   color: black;
   margin: 1rem auto;
