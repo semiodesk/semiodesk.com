@@ -266,8 +266,8 @@ a.text-dark:focus {
 .btn-primary.disabled,
 .btn-primary:disabled {
   color: #fff;
-  background-color: #984caa;
-  border-color: #984caa;
+  background-color: #a0a0a0;
+  border-color: #a0a0a0;
 }
 
 .btn-primary:not(:disabled):not(.disabled):active,
@@ -308,6 +308,20 @@ a.text-dark:focus {
   color: #fff;
   background-color: #aa5dbc;
   border-color: #aa5dbc;
+}
+
+.btn-round {
+  border-radius: 50%;
+  padding: 16px;
+}
+
+.btn-submit {
+  opacity: 1;
+  transition: opacity cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
+}
+
+.btn-submit:disabled {
+  opacity: 0;
 }
 
 /* Masthead */
@@ -364,18 +378,7 @@ a.text-dark:focus {
 }
 
 .form-status-msg {
-  background: #efefef;
-  border-radius: 5px;
   padding: 5px;
-  margin-bottom: 3px;
-}
-
-.form-status-sending {
-  background: #efefef;
-}
-
-.form-status-ok {
-  background: #efefef;
 }
 
 .form-status-ok .fas {
@@ -391,12 +394,12 @@ a.text-dark:focus {
   display: inline-block;
   position: relative;
   width: 64px;
-  height: 64px;
+  height: 32px;
 }
 
 .lds-ellipsis div {
   position: absolute;
-  top: 27px;
+  top: 10px;
   width: 11px;
   height: 11px;
   border-radius: 50%;
@@ -549,8 +552,20 @@ blockquote.brand-semiodesk:before {
   text-align: center;
 }
 
+.circle img {
+  height: 100%;
+  max-height: 155px;
+}
+
 .circle b {
   font-weight: 500;
+}
+
+.circle-s {
+  min-width: 125px;
+  min-height: 125px;
+  max-width: 125px;
+  max-height: 125px;
 }
 
 .circle-xl {
@@ -659,7 +674,8 @@ blockquote.brand-semiodesk:before {
 
   .sidenav {
     z-index: 2;
-    min-width: 550px;
+    min-width: 700px;
+    max-width: 800px;
     position: fixed;
     top: 0;
     left: 85%;
@@ -688,7 +704,7 @@ blockquote.brand-semiodesk:before {
   .sidenav-toggled .sidenav {
     top: 0;
     bottom: 0;
-    left: 60%;
+    left: 50%;
   }
 
   .sidenav-toggled .sidenav form {
@@ -744,4 +760,13 @@ blockquote:before {
   width: 100%;
   border-top: 2px solid #d0d0d0;
   margin: 2rem 2px;
+}
+
+.form-control,
+.input-group-text {
+  border-radius: 0;
+}
+
+.input-group-text img {
+  opacity: .5;
 }

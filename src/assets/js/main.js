@@ -11,7 +11,7 @@ $(document).ready(function() {
   });
 
   // Initialize the contact form.
-  const form = $("#contact-form");
+  const form = $("#form-contact");
 
   if (form) {
     $(".form-status-sending").css("display", "none");
@@ -31,12 +31,15 @@ $(document).ready(function() {
       formElements.map(input => (data[input.name] = input.value));
 
       // Log what our lambda function will receive
-      console.log(JSON.stringify(data));
+      console.log(formElements, JSON.stringify(data));
 
       $(".btn-submit").prop("disabled", true);
       $(".form-status-sending").css("display", "block");
       $(".form-status-ok").css("display", "none");
       $(".form-status-error").css("display", "none");
+      $('body').addClass('sidenav-toggled');
+
+      return;
 
       sendEmail(data, function(err, response) {
         if (err) {

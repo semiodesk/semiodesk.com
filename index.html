@@ -258,13 +258,13 @@
     <div class="sidenav text-center text-xl-left text-muted" id="contact">
       <h6 class="text-uppercase text-center d-xl-none">CONTACT US</h6>
 
-      <div class="d-flex flex-column align-items-center align-items-xl-start">
-        <div class="circle circle-xl overflow-hidden">
-          <img style="max-width: 300px;" src="assets/img/contact.jpg" />
+      <div class="d-flex flex-column align-items-center flex-xl-row align-items-xl-center">
+        <div class="circle circle-s overflow-hidden">
+          <img src="assets/img/contact.jpg" />
         </div>
 
-        <div>
-          <h4 class="mt-5 mb-3">How can we help you?</h4>
+        <div class="px-xl-4 w-100">
+          <h4 class="mb-3 mt-0">How can we help you?</h4>
           <p>
             Use the contact form below to send us a message. Our usual response time for enquiries is 1-2 business days.
           </p>
@@ -272,7 +272,7 @@
       </div>
 
       <form
-        class="overflow-y-scroll p-4 text-muted"
+        class="overflow-y-scroll p-4 text-muted mt-4"
         id="form-contact"
         role="form"
         action="https://contact.modom.io/form/send"
@@ -283,18 +283,26 @@
           <input type="name" class="form-control" id="name" placeholder="Name" required />
         </div>
         <div class="form-group">
-          <label class="sr-only" for="e-mail">Email address</label>
           <div class="input-group">
             <div class="input-group-prepend">
-              <div class="input-group-text">@</div>
+              <div class="input-group-text">
+                <img src="assets/img/icons/email-action-unread.svg" style="width: 24px" />
+              </div>
             </div>
-
+            <label class="sr-only" for="e-mail">Email address</label>
             <input type="email" class="form-control" id="email" placeholder="E-Mail" required />
           </div>
         </div>
         <div class="form-group">
-          <label class="sr-only" for="organization">Organization</label>
-          <input type="name" class="form-control" id="organization" placeholder="Organization" required />
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">
+                <img src="assets/img/icons/buildings-2.svg" style="width: 24px" />
+              </div>
+            </div>
+            <label class="sr-only" for="organization">Organization</label>
+            <input type="name" class="form-control" id="organization" placeholder="Organization" required />
+          </div>
         </div>
         <div class="form-group">
           <label class="sr-only" for="role">Subject</label>
@@ -304,35 +312,34 @@
           <label class="sr-only" for="message">Message</label>
           <textarea class="form-control" id="message" placeholder="Message" rows="10"></textarea>
         </div>
-        <div class="text-center">
-          <div class="form-status">
+
+        <div class="d-flex flex-row">
+          <div class="form-status w-100">
             <div class="form-status-msg form-status-sending">
-              <div class="d-flex flex-row align-items-center justify-content-center">
+              <div class="d-flex flex-row align-items-center justify-content-start">
                 <div class="lds-ellipsis">
                   <div></div>
                   <div></div>
                   <div></div>
                   <div></div>
                 </div>
-                Sending message..
+                <b>Sending message..</b>
               </div>
             </div>
 
             <div class="form-status-msg form-status-ok">
-              <i class="fas fa-check mr-2"></i> Message sent.
-              <p><small>We will respond to your request within 1-2 business days.</small></p>
+              <i class="fas fa-check mr-2"></i> <b>Message sent.</b> Thank you!
             </div>
 
             <div class="form-status-msg form-status-error">
-              <i class="fas fa-times mr-2"></i> Sending message failed.
-              <p>
-                <small>We apologize. Please <a href="mailto:hello@semiodesk.com">contact us via e-mail</a>.</small>
-              </p>
+              <i class="fas fa-times mr-2"></i> <b>Sending message failed.</b> We apologize. Please <a href="mailto:hello@semiodesk.com">contact us via e-mail</a>.
             </div>
           </div>
-        </div>
 
-        <button type="submit">Send</button>
+          <button class="btn btn-round btn-primary btn-submit" type="submit">
+            <img src="assets/img/icons/send-email.svg" width="24" alt="Send" />
+          </button>
+        </div>
       </form>
     </div>
 
