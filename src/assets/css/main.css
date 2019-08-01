@@ -37,7 +37,7 @@ h1 {
 }
 
 h6 {
-  font-weight: 500;
+  font-weight: 300;
   padding: 2em;
 }
 
@@ -142,7 +142,7 @@ a.text-dark:focus {
 }
 
 .text-blue {
-  color: #2236b8 !important;
+  color: #119eda !important;
 }
 
 .text-green {
@@ -190,7 +190,11 @@ a.text-dark:focus {
 }
 
 .page-section {
-  padding: 3rem 0;
+  padding: 6rem 0;
+}
+
+.page-section h6 {
+  padding-bottom: 0;
 }
 
 .list-animated li.animate {
@@ -282,15 +286,16 @@ a.text-dark:focus {
 }
 
 .btn-accent {
-  color: #fff;
-  background-color: #2236b8;
-  border-color: #2236b8;
+  color: rgb(17, 158, 218) !important;
+  background: white;
+  border-color: white;
+  cursor: pointer;
 }
 
 .btn-accent:hover {
   color: #fff;
-  background-color: rgb(73, 129, 248);
-  border-color: rgb(73, 129, 248);
+  background-color: rgba(17, 158, 218, 0.05);
+  border-color: rgba(17, 158, 218, 0.05);
 }
 
 .btn-trinity {
@@ -465,11 +470,11 @@ a.text-dark:focus {
 }
 
 blockquote.brand-se:before {
-  color: #3DCD58;
+  color: #3dcd58;
 }
 
 blockquote.brand-bvs:before {
-  color: #4177AA;
+  color: #4177aa;
 }
 
 blockquote.brand-ual:before {
@@ -477,7 +482,7 @@ blockquote.brand-ual:before {
 }
 
 blockquote.brand-wscad:before {
-  color: #FFC905;
+  color: #ffc905;
 }
 
 blockquote.brand-semiodesk:before {
@@ -531,24 +536,6 @@ blockquote.brand-semiodesk:before {
   margin: 20px 0 0 0;
 }
 
-.path > div {
-  flex-grow: 1;
-  flex-basis: 0;
-}
-
-.path .link {
-  display: block;
-  box-sizing: content-box;
-  background: black;
-  position: relative;
-  min-width: 100%;
-  border-top: 2px solid black;
-}
-
-.path h6 {
-  padding: 1rem 2rem;
-}
-
 .circle {
   display: flex;
   flex-direction: column;
@@ -574,7 +561,7 @@ blockquote.brand-semiodesk:before {
 }
 
 .circle-purple {
-  background: #8654A2;
+  background: #8654a2;
   color: white;
 }
 
@@ -635,7 +622,7 @@ blockquote.brand-semiodesk:before {
 
 .overlay {
   z-index: -1;
-  background: white;
+  background: black;
   position: fixed;
   top: 0;
   left: 0;
@@ -737,5 +724,24 @@ blockquote:before {
 
 .author {
   color: #4a4a4a;
-  padding: .5rem 1.2rem;
+  padding: 0.5rem 1.2rem;
+}
+
+.hr-y {
+  border-left: 2px solid #d0d0d0;
+  margin: 0 2rem 10px 2rem;
+}
+
+@media (min-width: 992px) {
+  .hr-lg-none {
+    border: none;
+    margin: 0;
+  }
+}
+
+.hr-x {
+  display: block;
+  width: 100%;
+  border-top: 2px solid #d0d0d0;
+  margin: 2rem 2px;
 }
