@@ -201,6 +201,14 @@ a.text-dark:focus {
   z-index: 4 !important;
 }
 
+.z-99 {
+  z-index: 99 !important;
+}
+
+.z-999 {
+  z-index: 999 !important;
+}
+
 .page-section {
   padding: 3rem 0;
 }
