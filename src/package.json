@@ -44,6 +44,7 @@
         "gulp-uglify": "^3.0.2",
         "gulp-uglify-es": "^1.0.4",
         "gulp-useref": "^3.1.6",
+        "jquery-appear-original": "^0.6.2",
         "merge-stream": "2.0.0"
     }
 }
