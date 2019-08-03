@@ -439,5 +439,67 @@
         $("#btn-contact").show();
       });
     </script>
+
+    <script type="application/ld+json">
+      [
+        {
+          "@id": "https://semiodesk.com",
+          "@context": "http://schema.org",
+          "@type": "Corporation",
+          "image": "/semiodesk.com/assets/img/semiodesk.svg",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Augsburg",
+            "addressRegion": "Bavaria",
+            "postalCode": "86159",
+            "streetAddress": "Werner-von-Siemens Str. 6 / 15K"
+          },
+          "founder": [
+            {
+              "@type": "Person",
+              "image": "/assets/img/people/sebastian-faubel.jpg",
+              "name": "Sebastian Faubel",
+              "givenName": "Sebastian",
+              "familyName": "Faubel",
+              "affiliation": "Semiodesk GmbH"
+            },
+            {
+              "@type": "Person",
+              "image": "/assets/img/people/moritz-eberl.jpg",
+              "name": "Moritz Eberl",
+              "givenName": "Moritz",
+              "familyName": "Eberl",
+              "affiliation": "Semiodesk GmbH"
+            }
+          ],
+          "owns": [
+            {
+              "@type": "Product",
+              "brand": {
+                "@type": "Brand",
+                "logo": "/assets/img/modom-io-logo.svg"
+              },
+              "image": "/assets/img/modom-io-logo.svg",
+              "name": "Modom.io",
+              "description": "Easily create well-documented ontologies and turn them into ready-to-use software packages."
+            },
+            {
+              "@type": "Product",
+              "brand": {
+                "@type": "Brand",
+                "logo": "/assets/img/trinity-logo.svg"
+              },
+              "image": "/assets/img/trinity-logo.svg",
+              "url": "//trinity-rdf.net",
+              "name": "Trinity RDF",
+              "description": "Enterprise ready object mapper for developing RDF knowledge graph applications with .NET"
+            }
+          ],
+          "name": "Semiodesk GmbH",
+          "url": "https://semiodesk.com",
+          "email": "hello@semiodesk.com"
+        }
+      ]
+    </script>
   </body>
 </html>
