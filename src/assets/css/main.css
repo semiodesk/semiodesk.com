@@ -7,6 +7,7 @@ body {
 }
 
 footer {
+  font-family: myriad-pro, sans-serif;
   margin-top: 3rem;
   background: #eee;
 }
@@ -32,13 +33,31 @@ a:hover {
   text-decoration: underline;
 }
 
-h1 {
-  color: #333;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: myriad-pro, sans-serif;
+}
+
+h3,
+h4 {
+  color: #6c757d;
+}
+
+h5 {
+  font-weight: 700;
 }
 
 h6 {
   font-weight: 300;
   padding: 2em;
+}
+
+.font-inherit {
+  font-family: inherit;
 }
 
 .text-black {
@@ -578,14 +597,14 @@ blockquote:before {
 }
 
 .author {
-  color: #4a4a4a;
+  color: #6c757d;
   padding: 0.5rem 0;
 }
 
 .author .name,
 .contact .name {
-  color: #4a535b;
   margin-bottom: 0;
+  font-family: inherit;
   font-size: 1em;
 }
 
@@ -703,6 +722,7 @@ blockquote:before {
   bottom: 0;
   opacity: 0;
   transition: opacity cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
+  display: none;
 }
 
 #btn-contact {
@@ -778,7 +798,7 @@ blockquote:before {
   }
 
   .sidenav-toggled .overlay {
-    z-index: 1;
+    display: block;
     opacity: 0.35;
   }
 }
