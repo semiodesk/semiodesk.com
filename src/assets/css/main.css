@@ -43,6 +43,41 @@ h6 {
   font-family: myriad-pro, sans-serif;
 }
 
+h1 {
+  font-size: 2.3em;
+  font-weight: bold;
+}
+
+@media (min-width: 400px) {
+  h1 {
+    font-size: 3em;
+  }
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 4em;
+  }
+}
+
+@media (min-width: 992px) {
+  h1 {
+    font-size: 4em;
+  }
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 5em;
+  }
+}
+
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 6em;
+  }
+}
+
 h3,
 h4 {
   color: #6c757d;
@@ -159,6 +194,14 @@ a.text-dark:focus {
 
 .text-white-50 {
   color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.text-yellow {
+  color: #fba41c !important;
+}
+
+.text-purple {
+  color: #8654a2 !important;
 }
 
 .text-blue {
@@ -387,7 +430,7 @@ a.text-dark:focus {
 .masthead .container {
   margin-top: 50px;
   min-height: 300px;
-  background: url("../img/bg-masthead.png") top center no-repeat;
+  background: url("../img/bg-masthead.svg") top center no-repeat;
   background-size: contain;
 }
 
@@ -755,7 +798,7 @@ blockquote:before {
 @media (min-width: 1300px) {
   .container {
     position: relative;
-    left: -5%;
+    left: -7%;
   }
 
   .sidenav {
