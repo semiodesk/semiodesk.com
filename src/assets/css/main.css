@@ -281,6 +281,10 @@ a.text-dark:focus {
   z-index: 999 !important;
 }
 
+.z-9999 {
+  z-index: 9999 !important;
+}
+
 .page-section {
   padding: 3rem 0;
 }
@@ -1061,4 +1065,26 @@ blockquote:before {
     min-width: 64px;
     min-height: 64px;
   }
+}
+
+/* Privacy dialog */
+#privacy-notice {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background: #eee;
+  padding: 5px;
+  max-width: 900px;
+  border-radius: 5px 5px 0 0;
+  opacity: 1;
+}
+
+#privacy-notice p {
+  margin-bottom: 0;
+}
+
+#privacy-notice .btn {
+  min-width: 0;
+  border-radius: 5px;
+  text-align: center;
 }

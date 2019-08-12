@@ -311,7 +311,14 @@
       </div>
     </section>
 
-    <div class="sidenav text-center text-xl-left z-999" id="contact">
+    <div id="privacy-notice" class="z-9999">
+      <div class="d-flex flex-row align-items-center">
+        <small class="w-100">This site uses cookies to optimize our services. <a href="privacy.html">Read More</a></small>
+        <a class="btn btn-primary ml-4" href="javascript:gaOptIn(); hidePrivacyNotice();">OK</a>
+      </div>
+    </div>
+
+    <div id="contact" class="sidenav text-center text-xl-left z-999">
       <h6 class="text-center d-xl-none">CONTACT US</h6>
 
       <div class="d-flex flex-column align-items-center flex-xl-row justify-content-xl-start">
@@ -436,6 +443,9 @@
       </div>
     </footer>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145477506-1"></script>
+
     <!--build:js assets/js/main.min.js -->
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
@@ -443,6 +453,7 @@
     <script src="node_modules/aos/dist/aos.js"></script>
     <script src="node_modules/jquery-appear-original/index.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/analytics.js"></script>
     <!--endbuild -->
 
     <script>
