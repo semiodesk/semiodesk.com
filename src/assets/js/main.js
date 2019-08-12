@@ -7,7 +7,9 @@ $(document).ready(function() {
   });
 
   $(".sidenav").click(() => {
-    $("body").addClass("sidenav-toggled");
+    if (!$("body").hasClass("sidenav-toggled")) {
+      $("#name").focus();
+    }
   });
 
   $(".overlay").click(() => {
