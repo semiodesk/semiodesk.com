@@ -17,7 +17,7 @@
   <body id="page-top" class="sidenav-open">
     <nav class="navbar navbar-primary">
       <div class="container">
-        <div class="w-100 d-flex flex-row justify-content-center justify-content-md-start p-3">
+        <div class="w-100 d-flex flex-row justify-content-center justify-content-md-start py-3">
           <img src="assets/img/semiodesk.svg" height="45" alt="Semiodesk" />
 
           <a id="btn-contact" class="btn btn-xl btn-primary d-xl-none" href="#contact" data-scroll>
@@ -30,30 +30,41 @@
     <header class="content-top masthead">
       <div class="container text-right">
         <h1>
-          <span class="t-1 d-block text-yellow" data-aos="fade-right">Accelerate your</span> <span class="t-2 d-inline-block text-purple" data-aos="fade-right" data-aos-delay="600">.NET</span>
-          <span class="t-3 d-inline-block text-blue" data-aos="fade-up" data-aos-delay="400">Knowledge</span>
-          <span class="t-3 d-block text-blue" data-aos="fade-up" data-aos-delay="400">Graph</span>
-          <span class="t-4 d-block text-purple" data-aos="fade-right" data-aos-delay="600">Development</span>
+          <span class="d-block text-yellow" data-aos="fade-right" data-aos-duration="500">Accelerate your</span>
+          <span class="d-inline-block text-purple" data-aos="fade-right" data-aos-duration="600" data-aos-delay="700">.NET</span>
+          <span class="d-inline-block text-blue" data-aos="fade-up" data-aos-delay="500">Knowledge</span>
+          <span class="d-block text-blue" data-aos="fade-up" data-aos-delay="500">Graph</span>
+          <span class="d-block text-purple" data-aos="fade-right" data-aos-duration="600" data-aos-delay="700">Development</span>
         </h1>
       </div>
     </header>
 
-    <section class="bg-white text-black mb-5">
+    <section class="bg-white text-black">
       <div class="container">
-        <p class="py-5">
-          Semiodesk provides know-how and efficient tools to speed up the development of corporate knowledge graph
-          applications with .NET
-        </p>
-
-        <div class="d-flex flex-column justify-content-start align-items-center flex-md-row justify-content-md-center">
-          <div class="circle circle-blue m-4" data-aos="zoom-in" data-aos-delay="0">
-            <b>.NET Software Development</b>
+        <div class="row">
+          <div class="col-lg-2"></div>
+          <div clasS="col-lg-8">
+            <div class="text-center m-4" data-aos="fade-in" data-aos-duration="1000">
+              Semiodesk provides know-how and efficient tools to speed up the development of corporate knowledge graph
+              applications with .NET
+            </div>
           </div>
-          <div class="circle circle-blue m-4" data-aos="zoom-in" data-aos-delay="0">
-            <b>RDF Knowledge Graphs</b>
-          </div>
-          <div class="circle circle-blue m-4" data-aos="zoom-in" data-aos-delay="0">
-            <b>RDF Ontology Engineering</b>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div
+              class="d-flex flex-column justify-content-start align-items-center flex-md-row justify-content-md-center"
+            >
+              <div class="circle circle-blue m-4" data-aos="zoom-in">
+                <b>.NET Software Development</b>
+              </div>
+              <div class="circle circle-blue m-4" data-aos="zoom-in">
+                <b>RDF Knowledge Graphs</b>
+              </div>
+              <div class="circle circle-blue m-4" data-aos="zoom-in">
+                <b>RDF Ontology Engineering</b>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -423,7 +434,8 @@
 
     <script>
       AOS.init({
-        easing: "ease-out-back"
+        easing: "ease-out-back",
+        mirror: true
       });
 
       $("footer").appear();

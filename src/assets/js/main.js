@@ -2,12 +2,23 @@ $(document).ready(function() {
   // Enable smooth scrolling.
   new SmoothScroll('a[href*="#"]', { speed: 150 });
 
-  $('.sidenav').focusin(function() {
-    $('body').addClass('sidenav-toggled');
+  $(".sidenav").focusin(function() {
+    $("body").addClass("sidenav-toggled");
   });
 
-  $('.sidenav').focusout(function() {
-    $('body').removeClass('sidenav-toggled');
+  $(".sidenav").click(() => {
+    $("body").addClass("sidenav-toggled");
+  });
+
+  $(".overlay").click(() => {
+    $("body").removeClass("sidenav-toggled");
+  });
+
+  $(".sidenav-trigger").click(function(e) {
+    if ($(".sidenav").css("position") == "fixed") {
+      e.preventDefault();
+      $("#name").focus();
+    }
   });
 
   // Initialize the contact form.
@@ -37,7 +48,7 @@ $(document).ready(function() {
       $(".form-status-sending").css("display", "block");
       $(".form-status-ok").css("display", "none");
       $(".form-status-error").css("display", "none");
-      $('body').addClass('sidenav-toggled');
+      $("body").addClass("sidenav-toggled");
 
       return;
 

@@ -4,6 +4,7 @@ body {
   line-height: 1.5;
   margin: 0;
   padding: 0;
+  min-width: 300px;
 }
 
 footer {
@@ -46,6 +47,10 @@ h6 {
 h1 {
   font-size: 2.3em;
   font-weight: bold;
+}
+
+h5 {
+  margin-top: 2em;
 }
 
 @media (min-width: 400px) {
@@ -422,6 +427,10 @@ a.text-dark:focus {
   opacity: 0;
 }
 
+section {
+  margin: 5em auto;
+}
+
 /* Masthead */
 .masthead {
   background: white;
@@ -429,15 +438,45 @@ a.text-dark:focus {
 
 .masthead .container {
   margin-top: 50px;
-  min-height: 300px;
-  background: url("../img/bg-masthead.svg") top center no-repeat;
+  background: url("../img/bg-masthead.svg") top right no-repeat;
   background-size: contain;
+  min-height: 300px;
+}
+
+@media (min-width: 400px) {
+  h1 {
+    font-size: 3.15em;
+  }
+}
+
+@media (min-width: 500px) {
+  h1 {
+    font-size: 4em;
+  }
+
+  .masthead .container {
+    min-height: 400px;
+    margin-bottom: 100px;
+  }
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 5em;
+  }
 }
 
 @media (min-width: 992px) {
+  h1 {
+    font-size: 7em;
+  }
+
+  #col-teaser {
+    height: 550px;
+  }
+
   .masthead .container {
-    margin-top: 0;
-    min-height: 500px;
+    margin-bottom: 100px;
   }
 }
 
@@ -819,7 +858,7 @@ blockquote:before {
   .sidenav:hover,
   .sidenav.sidenav-hover {
     top: 0;
-    left: 82%;
+    left: 80%;
     -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
     -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
