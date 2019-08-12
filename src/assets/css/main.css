@@ -1069,6 +1069,7 @@ blockquote:before {
 
 /* Privacy dialog */
 #privacy-notice {
+  display: none;
   position: fixed;
   bottom: 0;
   right: 0;
