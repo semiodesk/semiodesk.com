@@ -31,28 +31,22 @@ $(document).ready(function() {
     $(".form-status-ok").css("display", "none");
     $(".form-status-error").css("display", "none");
 
-    $(".btn-submit").click(function(e) {
-      form.submit();
-    });
-
     form.submit(function(e) {
       e.preventDefault();
 
       // Prepare data to send
-      const data = {};
-      const formElements = Array.from(form);
-      formElements.map(input => (data[input.name] = input.value));
-
-      // Log what our lambda function will receive
-      console.log(formElements, JSON.stringify(data));
+      data = {
+        name: form.find("#name").val(),
+        reply_to: form.find("#email").val(),
+        organization: form.find("#organization").val(),
+        subject: form.find("#subject").val(),
+        message: form.find("#message").val()
+      };
 
       $(".btn-submit").prop("disabled", true);
       $(".form-status-sending").css("display", "block");
       $(".form-status-ok").css("display", "none");
       $(".form-status-error").css("display", "none");
-      $("body").addClass("sidenav-toggled");
-
-      return;
 
       sendEmail(data, function(err, response) {
         if (err) {
@@ -65,8 +59,6 @@ $(document).ready(function() {
           $(".form-status-sending").css("display", "none");
           $(".form-status-ok").css("display", "block");
           $(".form-status-error").css("display", "none");
-
-          form.reset();
         }
       });
     });
@@ -88,7 +80,7 @@ $(document).ready(function() {
         callback(true, response.target.response);
       };
 
-      xhr.open(form.method, form.action, true);
+      xhr.open(form.attr("method"), form.attr("action"), true);
       xhr.setRequestHeader("Accept", "application/json; charset=utf-8");
       xhr.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
 
