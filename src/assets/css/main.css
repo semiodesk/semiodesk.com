@@ -446,7 +446,10 @@ section {
 
 .masthead .container {
   margin-top: 50px;
-  background: url("../img/bg-masthead.svg") top right no-repeat;
+  background-image: url("../img/bg-masthead.svg");
+  background-position-x: 80%;
+  background-position-y: top;
+  background-repeat: no-repeat;
   background-size: contain;
   min-height: 300px;
 }
@@ -933,36 +936,26 @@ blockquote:before {
   }
 
   .quote-bubble {
-    border: 1px solid #CED4DA;
     border-radius: 5px;
     padding: 20px;
     position: relative;
+    background: #EEEEEE;
   }
 
   .quote-bubble:before {
     display: block;
     position: absolute;
     top: 26px;
-    left: -17px;
+    left: -16px;
     border-left: 16px solid transparent;
-    border-top: 16px solid #CED4DA;
-    content: "";
-  }
-
-  .quote-bubble:after {
-    display: block;
-    position: absolute;
-    top: 27px;
-    left: -14px;
-    border-left: 14px solid transparent;
-    border-top: 14px solid white;
+    border-top: 16px solid #EEEEEE;
     content: "";
   }
 
   .quote-bubble h4 {
     font-size: 1.4em;
-    font-weight: 600;
-    color: black;
+    font-weight: 800;
+    color: #119eda;
   }
 }
 
@@ -1008,7 +1001,6 @@ blockquote:before {
   position: relative;
   display: block;
   min-width: 20px;
-  min-height: 220px;
   margin: 0 0.5rem;
 }
 
@@ -1046,6 +1038,29 @@ blockquote:before {
   bottom: -20px;
 }
 
+.solution-label {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+#solution-y {
+  position: absolute;
+  bottom: -50px;
+  left: -22px;
+}
+
+#solution-x {
+  position: absolute;
+  top: -15px;
+  right: -50px;
+}
+
+#solution-x .solution-label {
+  position: relative;
+  top: -6.5em;
+  transform: rotate(-90deg);
+}
+
 .form-control,
 .input-group-text {
   border-radius: 4px;
@@ -1056,8 +1071,8 @@ blockquote:before {
 }
 
 .icon-32 {
-  min-width: 32px;
-  min-height: 32px;
+  width: 32px;
+  height: 32px;
 }
 
 @media (min-width: 768px) {
