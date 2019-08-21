@@ -8,7 +8,8 @@ var imagemin = require("gulp-imagemin");
 var cache = require("gulp-cache");
 
 gulp.task("compact-useref", function() {
-  gulp.src("products/*", { allowEmpty: true }).pipe(gulp.dest("../products/"));
+  gulp.src("_layouts/*.html", { allowEmpty: true }).pipe(gulp.dest("../_layouts/"));
+  gulp.src("products/*.md", { allowEmpty: true }).pipe(gulp.dest("../products/"));
 
   return gulp
     .src("*.html", { allowEmpty: true })
