@@ -4,6 +4,12 @@ $(document).ready(function() {
 
   $(".sidenav").focusin(function() {
     $("body").addClass("sidenav-toggled");
+
+    if (gtag) {
+      gtag("event", "focus", {
+        event_category: "contact"
+      });
+    }
   });
 
   $(".sidenav").click(() => {
@@ -33,6 +39,16 @@ $(document).ready(function() {
 
     form.submit(function(e) {
       e.preventDefault();
+
+      if (gtag) {
+        gtag("event", "submit", {
+          event_category: "contact"
+        });
+
+        gtag("event", "generate_lead", {
+          event_category: "engagement"
+        });
+      }
 
       // Prepare data to send
       data = {
