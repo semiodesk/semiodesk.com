@@ -41,10 +41,6 @@ $(document).ready(function() {
       e.preventDefault();
 
       if (gtag) {
-        gtag("event", "submit", {
-          event_category: "contact"
-        });
-
         gtag("event", "generate_lead", {
           event_category: "engagement"
         });
