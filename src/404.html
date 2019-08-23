@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>semiodesk | Everything connects.</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="Semiodesk GmbH" />
+
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="//use.typekit.net/grc8lua.css" rel="stylesheet" />
+
+    <!--build:css assets/css/main.min.css -->
+    <link href="node_modules/@fortawesome/fontawesome-free/css/all.css" rel="stylesheet" />
+    <link href="node_modules/roboto-fontface/css/roboto/roboto-fontface.css" rel="stylesheet" />
+    <link href="node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="node_modules/aos/dist/aos.css" rel="stylesheet" />
+    <link href="assets/css/main.css" rel="stylesheet" />
+    <!--endbuild -->
+  </head>
+
+  <body id="page-top" class="sidenav-open">
+    <nav class="navbar navbar-primary">
+      <div class="container">
+        <div class="w-100 d-flex flex-row justify-content-center justify-content-md-start py-3">
+          <img src="assets/img/semiodesk.svg" height="45" alt="Semiodesk" />
+        </div>
+      </div>
+    </nav>
+
+    <section class="text-center" style="min-height: 500px">
+      <h1 style="opacity: .15">:(</h1>
+      <h1>404</h1>
+      <h3 class="text-muted">File not found.</h3>
+
+      <p>We were unable to located the requested page.</p>
+
+      <a href="//">Back to homepage.</a>
+    </section>
+
+    <footer id="footer mt-5">
+      <div class="container text-center text-md-left">
+        <div class="row">
+          <div class="col-md-3 order-md-2 small">
+            Semiodesk GmbH<br />
+            Werner-von-Siemens Str. 6<br />
+            Building 15K<br />
+            D-86159 Augsburg<br />
+            GERMANY
+          </div>
+          <div class="col-md-3 order-md-1 d-none d-md-flex"></div>
+          <div class="col-md-6 order-md-0">
+            <ul class="list-inline mb-2">
+              <li class="list-inline-item">
+                <a href="notice.html">Site Notice</a>
+              </li>
+              <li class="list-inline-item">⋅</li>
+              <li class="list-inline-item">
+                <a href="privacy.html">Privacy Policy</a>
+              </li>
+              <li class="list-inline-item">⋅</li>
+              <li class="list-inline-item">
+                <a href="#contact" class="sidenav-trigger">Contact Us</a>
+              </li>
+            </ul>
+            <p class="small mb-4">&copy; Semiodesk GmbH 2019. All Rights Reserved.</p>
+
+            <ul class="list-inline mt-5">
+              <li class="list-inline-item mr-3">
+                <a href="#"><i class="fab fa-2x  fa-twitter ml-3"></i></a>
+                <a href="#"><i class="fab fa-2x fa-linkedin ml-3"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145477506-1"></script>
+
+    <!--build:js assets/js/main.min.js -->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="node_modules/smooth-scroll/dist/smooth-scroll.js"></script>
+    <script src="node_modules/aos/dist/aos.js"></script>
+    <script src="node_modules/jquery-appear-original/index.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/analytics.js"></script>
+    <!--endbuild -->
+
+    <script>
+      AOS.init({
+        easing: "ease-out-back",
+        mirror: true
+      });
+
+      $("footer").appear();
+
+      $("footer").on("appear", e => {
+        $(".sidenav").addClass("sidenav-hover");
+      });
+
+      $("footer").on("disappear", e => {
+        $(".sidenav").removeClass("sidenav-hover");
+      });
+
+      $("#contact").appear();
+
+      $("#contact").on("appear", e => {
+        $("#btn-contact").hide();
+      });
+
+      $("#contact").on("disappear", e => {
+        $("#btn-contact").show();
+      });
+    </script>
+
+    <script type="application/ld+json">
+      [
+        {
+          "@id": "https://semiodesk.com",
+          "@context": "http://schema.org",
+          "@type": "Corporation",
+          "image": "/semiodesk.com/assets/img/semiodesk.svg",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Augsburg",
+            "addressRegion": "Bavaria",
+            "postalCode": "86159",
+            "streetAddress": "Werner-von-Siemens Str. 6 / 15K"
+          },
+          "founder": [
+            {
+              "@type": "Person",
+              "image": "/assets/img/people/sebastian-faubel.jpg",
+              "name": "Sebastian Faubel",
+              "givenName": "Sebastian",
+              "familyName": "Faubel",
+              "affiliation": "Semiodesk GmbH"
+            },
+            {
+              "@type": "Person",
+              "image": "/assets/img/people/moritz-eberl.jpg",
+              "name": "Moritz Eberl",
+              "givenName": "Moritz",
+              "familyName": "Eberl",
+              "affiliation": "Semiodesk GmbH"
+            }
+          ],
+          "owns": [
+            {
+              "@type": "Product",
+              "brand": {
+                "@type": "Brand",
+                "logo": "/assets/img/modom-io-logo.svg"
+              },
+              "image": "/assets/img/modom-io-logo.svg",
+              "name": "Modom.io",
+              "description": "Easily create well-documented ontologies and turn them into ready-to-use software packages."
+            },
+            {
+              "@type": "Product",
+              "brand": {
+                "@type": "Brand",
+                "logo": "/assets/img/trinity-logo.svg"
+              },
+              "image": "/assets/img/trinity-logo.svg",
+              "url": "//trinity-rdf.net",
+              "name": "Trinity RDF",
+              "description": "Enterprise ready object mapper for developing RDF knowledge graph applications with .NET"
+            }
+          ],
+          "name": "Semiodesk GmbH",
+          "url": "https://semiodesk.com",
+          "email": "hello@semiodesk.com"
+        }
+      ]
+    </script>
+  </body>
+</html>
