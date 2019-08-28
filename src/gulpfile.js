@@ -9,7 +9,8 @@ var cache = require("gulp-cache");
 
 gulp.task("compact-useref", function() {
   gulp.src("products/trinity/*.html", { allowEmpty: true }).pipe(gulp.dest("../products/trinity/"));
-
+  gulp.src("products/tinyvirtuoso/*.html", { allowEmpty: true }).pipe(gulp.dest("../products/tinyvirtuoso/"));
+  
   return gulp
     .src("*.html", { allowEmpty: true })
     .pipe(useref())
