@@ -1,6 +1,6 @@
 body {
   font-family: 'Roboto Condensed', 'Helvetica', 'Arial', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 1.1em;
   line-height: 1.5;
   margin: 0;
@@ -13,6 +13,7 @@ body {
 }
 
 footer {
+  font-weight: 400;
   color: #36393c;
   margin-top: 3rem;
   border-top: 1px solid #eee;
@@ -332,6 +333,103 @@ a.text-dark:focus {
   }
 }
 
+.flag {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-size: cover;
+  background-repeat: none;
+  background-color: #f0f0f0;
+}
+
+.flag-en {
+  background: url('../img/icons/gb.svg');
+}
+
+.flag-de {
+  background: url('../img/icons/de.svg');
+}
+
+.lang-switcher {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.dropdown-toggle,
+.dropdown-item {
+  font-weight: 400 !important;
+}
+
+.dropdown-toggle {
+  background: white;
+  color: black;
+  border: none;
+  border-radius: 0;
+  border: 2px solid transparent;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.dropdown-toggle:after {
+  display: none !important;
+}
+
+.dropdown-toggle:hover {
+  background: #cfecf8 !important;
+  color: black;
+  border: 2px solid transparent !important;
+  border-radius: 0 0 5px 5px;
+}
+
+.dropdown-toggle:focus,
+.dropdown-toggle:active {
+  color: black !important;
+  box-shadow: none !important;
+  background: #cfecf8 !important;
+  border: 2px solid transparent !important;
+}
+
+.show .dropdown-toggle {
+  color: black !important;
+  background: white !important;
+  border: 2px solid transparent !important;
+  border-radius: 0 0 5px 5px !important;
+}
+
+.dropdown-menu {
+  margin: 5px 0 0 0;
+  padding: 0;
+  background: white;
+  border: none;
+  border-radius: 5px !important;
+  overflow: hidden;
+  min-width: 0 !important;
+}
+
+.dropdown-item {
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.dropdown-item.active,
+.dropdown-item.active:hover {
+  color: white !important;
+  background: #119eda !important;
+  text-decoration: none;
+}
+
+.dropdown-item:active,
+.dropdown-item:hover {
+  color: black !important;
+  background: #cfecf8 !important;
+}
+
 .navbar .btn {
   transition: background-color 0.3s;
   cursor: pointer;
@@ -499,15 +597,6 @@ section {
   .masthead .container {
     margin-bottom: 100px;
   }
-}
-
-.lang-switcher {
-  color: black;
-}
-
-.lang-switcher a.active {
-  color: black;
-  text-decoration: underline;
 }
 
 .color-accent {

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
   <head>
     <title>semiodesk | Everything connects.</title>
 
@@ -18,16 +18,33 @@
   </head>
 
   <body id="page-top" class="sidenav-open">
-    <nav class="navbar navbar-primary">
-      <div class="container">
+    <nav class="navbar navbar-primary pt-0">
+      <div class="container p-relative">
+        <div class="lang-switcher dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            id="langSwitcherButton"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <span class="flag flag-de mr-sm-2"></span
+            ><span class="d-none d-sm-inline">Deutsch</span>
+          </button>
+          <div
+            class="dropdown-menu dropdown-menu-right"
+            aria-labelledby="dropdownMenuButton"
+          >
+            <a class="dropdown-item" href="index.html"
+              ><span class="flag flag-en mr-2"></span> English</a
+            >
+          </div>
+        </div>
+
         <div
           class="w-100 d-flex flex-row justify-content-center justify-content-md-start py-3"
         >
           <img src="assets/img/semiodesk.svg" height="45" alt="Semiodesk" />
-
-          <div class="lang-switcher ml-auto">
-            <a href="index.en.html">English</a> | <a class="active">Deutsch</a>
-          </div>
 
           <a
             id="btn-contact"
@@ -49,9 +66,7 @@
     <header class="content-top masthead">
       <div class="container text-right">
         <h1>
-          <span
-            class="d-block text-yellow"
-            data-aos="fade-right"
+          <span class="d-block text-yellow" data-aos="fade-right"
             >Beschleunigen Sie</span
           >
           <span
@@ -566,7 +581,7 @@
         <div class="circle circle-s overflow-hidden">
           <img
             src="assets/img/icons/headphones-customer-support-human-blue.svg"
-            class="mx-1 my-3 my-lg-4 icon-32 icon-sm-64"
+            class="mx-1 my-3 my-lg-4 icon-64"
             width="64"
           />
         </div>
@@ -581,8 +596,8 @@
       </div>
 
       <div class="show-hover show-toggled text-muted">
-        Verwenden Sie das folgende Kontaktformular um uns eine Nachricht
-        zu senden. Unsere Antwortzeit beträgt in der Regel 1-2 Werktage.
+        Verwenden Sie das folgende Kontaktformular um uns eine Nachricht zu
+        senden. Unsere Antwortzeit beträgt in der Regel 1-2 Werktage.
       </div>
 
       <form
@@ -688,8 +703,8 @@
 
     <div class="overlay z-99"></div>
 
-    <footer id="footer">
-      <div class="container text-center text-md-left">
+    <div class="container text-center text-md-left">
+      <footer id="footer">
         <div class="row">
           <div class="col-md-3 order-md-2 small">
             Semiodesk GmbH<br />
@@ -729,8 +744,8 @@
             </ul>
           </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
